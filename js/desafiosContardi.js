@@ -242,5 +242,7 @@
 // function creoID() {
 //     return parseInt(Math.random()* 10000) // funcion pora generar ID aleatorio
 // }
+
+
 //!  SECTOR NO PERTENECE A DESAFIO//  
-//! DESAFIO DE ARRAYS PASAR A SIMULADOR.JS            
+//! DESAFIO DE ARRAYS PASAR A SIMULADOR.HTML           
