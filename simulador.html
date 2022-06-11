@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <meta charset="UTF-8">
+    <title>Mercado de la Fruta</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/variables.js"></script>
+    <script defer src="js/arrays.js"></script>
+</head>
+<body>
+    <h1>Mercado de la frutas</h1>    
+    <p></p>
+    <article class="container">
+        <div class="parent">
+            <div>
+                <label for="selectProducto">producto</label>
+                <select id="frutas" name="selectProducto">
+                    <option value="" selected disabled>...</option>
+                    <option value="" selected>Anana</option>
+                    <option value="" selected>Pera</option>
+                    <option value="" selected>Manzana</option>
+                    <option value="" selected>Naranja</option>
+                    <option value="" selected>Ciruela</option>
+                    <option value="" selected>Durazno</option>
+                    <option value="" selected>Kiwi</option>
+                    <option value="" selected>Mango</option>
+                </select>    
+            </div>
+            <footer>
+                <button role="button" class="primary" onclick="listaproducto()">LISTAR PRODUCTO</button>
+                <button role="button" class="secondary" onclick="agregarProductos()">AGREGAR PRODUCTO</button>
+                <button role="button" class="delete" onclick="quitarProducto()">QUITAR PRODUCTO</button>
+                
+            </footer>
+        </div>
+    </article>
+</body>
+</html>
