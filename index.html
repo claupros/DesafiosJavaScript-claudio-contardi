@@ -1,86 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+<head> 
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mercado de la Fruta</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafios Claudio</title> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="style.css">
-    <script defer src="js/desafiosContardi.js"></script>
+    <script src="js/variables.js"></script>
     <script defer src="js/arrays.js"></script>
-    <script defer src="js/variables.js"></script>
 </head>
 <body>
-<h1 id="apartado1"><span class="icon icon-library">BANCO AQUA</span></h1>
-   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        
-       
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Menu</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#">INICIO</a></li>
-                    <li><a class="dropdown-item" href="#">HOME BANKING</a></li>
-                    <li><a class="dropdown-item" href="#">SEGUROS Y ASISTENCIAS</a></li>
-                    <li><a class="dropdown-item" href="#">BENEFICIOS</a></li>
-                    <li><a class="dropdown-item" href="#">TURNOS ONLINE</a></li>
-                    <li><a class="dropdown-item" href="#">BANCA PRIVADA</a></li>
-                    <li><a class="dropdown-item" href="#">SEGUROS Y ASISTENCIAS</a></li>
-                    <li><a class="dropdown-item" href="#">CENTRO DE AYUDA</a></li>
-                    <li><a class="dropdown-item" href="#">CONTACTO</a></li>
-                  </ul>
-                </li>
-              </ul>
+    <h1>Mercado de la frutas</h1>    
+    <p>Contardi Claudio</p>
+    <article class="container">
+        <div class="parent">
+            <div>
+                <label for="selectProducto">producto</label>
+                <select id="frutas" name="selectProducto">
+                    <option value="" selected disabled>...</option>
+                    <option value="" selected>Anana</option>
+                    <option value="" selected>Pera</option>
+                    <option value="" selected>Manzana</option>
+                    <option value="" selected>Naranja</option>
+                    <option value="" selected>Ciruela</option>
+                    <option value="" selected>Durazno</option>
+                    <option value="" selected>Kiwi</option>
+                    <option value="" selected>Mango</option>
+                </select>    
             </div>
-          </div>
-     </nav>
-    
-   </header> 
-          
-   <section class="container container-fluid col-12">
-    <div class="sectionContacto col-12">
-      <form  action="enviar.php" method="post">
-        <h1 class="h2Contacto">PRESTAMO PERSONAL</h1>
-        <input type="text" name ="nombre" placeholder ="Ingrese su Nombre" required />
-        <input type="text" name="apellido" placeholder="Ingrese su Apellido" required />
-        <input type="text" name="montoSolicitado" placeholder="Ingrese Monto Solicitado" required />
-        <input type="text" name="cantidadCuotas" placeholder="Ingrese cantidad de cuotas" required />
-        <textarea
-          name="Mensaje"
-          placeholder="Escriba aqui su mensaje"
-          required
-        ></textarea>
-        <input type="submit" value="SIMULAR" id="boton" />
-      </form>
-    </div>
-  </section>
-
-<footer class="text-center text-white" style="background-color: #f1f1f1;">
-      <!-- Copyright -->
-      <div >
-        © 2020 Copyright:
-        <a>Desarrollador Claudio Contardi / Prof: Fernando Luna / Lenguaje: JavaScript</a>
-      </div>
-      <!-- Copyright -->
-    </footer>
-  <!--<button onclick="alerta">click</button>
-  <script>
-      function alerta (){
-          alert ('click alerta')
-      }
-  </script>-->
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+            <footer>
+                <button role="button" class="primary" onclick="listaproducto()">LISTAR PRODUCTO</button>
+                <button role="button" class="secondary" onclick="agregarProductos()">AGREGAR PRODUCTO</button>
+                <button role="button" class="delete" onclick="quitarProducto()">QUITAR PRODUCTO</button>
+                
+            </footer>
+        </div>
+    </article>
 </body>
 </html>
