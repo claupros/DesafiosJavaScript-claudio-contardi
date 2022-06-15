@@ -220,14 +220,14 @@
             // <button role="button" class="contrast" onclick="calcularCarrito()">CALCULAR CARRITO</button> }*/
 
 //operacion para buscar producto u objetos dentro de la lista del arrays***************************** */
-            // function buscarProducto() {
-            //     let aBuscar = prompt("Ingrese el nombre del producto a buscar:").toUpperCase()
-            //         debugger
-            //         //let resultado = productos.find((producto)=> producto.id === parseInt(aBuscar)) //**este es para buscar por numero de prodducto */
-            //         let resultado = productos.find((producto)=> producto.nombre.includes(aBuscar)) //este es para buscar por nombre */
-            //             console.clear()
-            //             console.table(resultado)
-            // }
+            //  function buscarProducto() {
+            //      let aBuscar = prompt("Ingrese el nombre del producto a buscar:").toUpperCase()
+            //          debugger
+            // //         //let resultado = productos.find((producto)=> producto.id === parseInt(aBuscar)) //**este es para buscar por numero de prodducto */
+            //          let resultado = productos.find((producto)=> producto.nombre.includes(aBuscar)) //este es para buscar por nombre */
+            //              console.clear()
+            //              console.table(resultado)
+            //  }
  //operacion para buscar producto u objetos dentro de la lista del arrays***************************** */
 
 // function agregarFruta() {
@@ -239,10 +239,43 @@
 //     console.table(frutas)
     
 // }
-// function creoID() {
-//     return parseInt(Math.random()* 10000) // funcion pora generar ID aleatorio
-// }
+//  function creoID() {
+//      return parseInt(Math.random()* 10000) // funcion pora generar ID aleatorio
+//  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //!  SECTOR NO PERTENECE A DESAFIO//  
-//! DESAFIO DE ARRAYS PASAR A SIMULADOR.HTML           
+           
